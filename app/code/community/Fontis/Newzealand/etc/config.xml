@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Fontis New Zealand Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category   Fontis
+ * @package    Fontis_Newzealand
+ * @author     Chris Norton
+ * @copyright  Copyright (c) 2008 Fontis Pty. Ltd. (http://www.fontis.com.au)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Fontis_Newzealand>
+            <version>0.5.0</version>
+            <depends>
+                <Mage_Shipping />
+                <Mage_Payment />
+            </depends>
+        </Fontis_Newzealand>
+    </modules>
+    <global>
+    	<models>
+    		<newzealand>
+	    		<class>Fontis_Newzealand_Model</class>
+	    	</newzealand>
+    	</models>
+    	<helpers>
+    		<newzealand>
+    			<class>Fontis_Newzealand_Helper</class>
+    		</newzealand>
+    	</helpers>
+        <resources>
+            <newzealand_setup>
+                <setup>
+                    <module>Fontis_Newzealand</module>
+                </setup>
+                <connection>
+                    <use>directory_setup</use>
+                </connection>
+            </newzealand_setup>
+            <newzealand_write>
+                <connection>
+                    <use>local_write</use>
+                </connection>
+            </newzealand_write>
+            <newzealand_read>
+                <connection>
+                    <use>local_read</use>
+                </connection>
+            </newzealand_read>
+        </resources>
+    </global>
+	<default>
+        <payment>
+			<directdeposit_nz>
+				<active>1</active>
+				<model>fontis_newzealand_model_payment_directdeposit</model>
+				<order_status>pending</order_status>
+				<title>Direct Deposit</title>
+				<account_name></account_name>
+				<account_bank></account_bank>
+				<account_branch></account_branch>
+				<account_number></account_number>
+				<allowspecific>0</allowspecific>
+				<message>Please quote order number (displayed after checkout confirmation) when making your deposit. Order will be processed once payment has been received.</message>
+        	</directdeposit_nz>
+        </payment>
+    </default>
+</config>
