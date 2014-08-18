@@ -20,10 +20,10 @@
  */
 ?>
 <p><?=$this->getMethod()->getTitle()?>
-<?if($this->getInfo()->getAdditionalData()):?>
-    <?if($this->getAccountName()):?><br /><?=$this->__('Payee: %s', $this->getAccountName())?><?endif;?>
-	<?if($this->getAccountBank()):?><br /><?=$this->__('Bank: %s', $this->getAccountBank())?><?endif;?>
-	<?if($this->getAccountNumber()):?><br /><?=$this->__('ACC#: %s', $this->getAccountNumber())?><?endif;?>
-	<?if($this->getAccountBranch()):?><br /><?=$this->__('Branch: %s', $this->getAccountBranch())?><?endif;?>
-<?endif;?>
+<?php if($this->getInfo()->getAdditionalData()):?>
+    <?php if($this->getAccountName()):?><br /><?=$this->__('Payee: %s', $this->getAccountName())?><?php endif;?>
+    <?php if($this->getAccountBank()):?><br /><?=$this->__('Bank: %s', $this->getAccountBank())?><?php endif;?>
+    <?php if($this->getAccountNumber()):?><br /><?=$this->__('ACC#: %s', $this->getAccountNumber())?><?php endif;?>
+    <?php if($this->getAccountBranch()):?><br /><?=$this->__('Branch: %s', $this->getAccountBranch())?><?php endif;?>
+<?php endif;?>
 </p>

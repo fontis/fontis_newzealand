@@ -23,21 +23,21 @@
     <ul id="payment_form_<?=$this->getMethodCode()?>" style="display:none">
         <li>
             <div class="input-box">
-                <?if ($this->getMethod()->getAccountName()):?>
+                <?php if ($this->getMethod()->getAccountName()):?>
                     <?=$this->__('<label>Payee</label>: %s', $this->getMethod()->getAccountName())?><br />
-                <?endif;?>
-                <?if ($this->getMethod()->getAccountBank()):?>
+                <?php endif;?>
+                <?php if ($this->getMethod()->getAccountBank()):?>
                     <?=$this->__('<label>Bank</label>: %s', $this->getMethod()->getAccountBank())?><br />
-                <?endif;?>
-                <?if ($this->getMethod()->getAccountNumber()):?>
+                <?php endif;?>
+                <?php if ($this->getMethod()->getAccountNumber()):?>
                     <?=$this->__('<label>ACC#</label>: %s', $this->getMethod()->getAccountNumber())?><br />
-                <?endif;?>
-                <?if ($this->getMethod()->getAccountBranch()):?>
+                <?php endif;?>
+                <?php if ($this->getMethod()->getAccountBranch()):?>
                     <?=$this->__('<label>Branch</label>: %s', $this->getMethod()->getAccountBranch())?><br />
-                <?endif;?>
-                <?if ($this->getMethod()->getMessage()):?>
-                	<p><?=$this->__('%s', $this->getMethod()->getMessage());?></p>
-                <?endif;?>
+                <?php endif;?>
+                <?php if ($this->getMethod()->getMessage()):?>
+                    <p><?=$this->__('%s', $this->getMethod()->getMessage());?></p>
+                <?php endif;?>
             </div>
         </li>
     </ul>
