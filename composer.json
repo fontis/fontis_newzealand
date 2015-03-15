@@ -1,0 +1,10 @@
+{
+    "name": "fontis/l10n-newzealand",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Provides essential functionality for New Zealand stores",
+    "homepage": "https://github.com/fontis/fontis_newzealand",
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
