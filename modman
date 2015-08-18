@@ -1,0 +1,7 @@
+# modman installation file
+# https://github.com/colinmollenhour/modman
+
+app/code/community/Fontis/Newzealand                             app/code/community/Fontis/
+app/design/adminhtml/default/default/template/fontis/newzealand  app/design/adminhtml/default/default/template/fontis/
+app/design/frontend/default/default/template/fontis/newzealand   app/design/frontend/default/default/template/fontis/
+app/etc/modules/Fontis_Newzealand.xml                            app/etc/modules/
