@@ -1,0 +1,14 @@
+# modman installation file
+# https://github.com/colinmollenhour/modman
+
+# app
+app/code/community/Fontis/* app/code/community/Fontis/
+
+# frontend - admin
+app/design/adminhtml/default/default/template/fontis/* app/design/adminhtml/default/default/template/fontis/
+
+# frontend - front
+app/design/frontend/default/default/template/fontis/* app/design/frontend/default/default/template/fontis/
+
+# etc
+app/etc/modules/* app/etc/modules/
