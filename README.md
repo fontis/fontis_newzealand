@@ -1,6 +1,6 @@
 Fontis New Zealand
 ==================
 
-Extension which provides basic information for Magento stores in New Zealand.
+**Note:** This extension is **abandoned** and no longer maintained. It only supports Magento 1 and we have no plans to undertake development of a Magento 2 version.
 
-Further documentation is available from the [Fontis New Zealand extension](https://www.fontis.com.au/new-zealand-magento-extension) page on our website.
+Extension which provides basic information for Magento stores in New Zealand.
